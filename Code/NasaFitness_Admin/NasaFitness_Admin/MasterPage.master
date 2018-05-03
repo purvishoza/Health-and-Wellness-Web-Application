@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Nasa Fitness</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+          <!--  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    
+     <script src="Scripts/bs.modal.min.js"></script>
+
+      <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+    
+    <!--<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="../Scripts/gridviewScroll.min.js"></script> 
+		
+</head>
+        
+<body >
+   
+    <nav class="navbar navbar-default no-margin">
+    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header fixed-brand">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle" >
+                      <span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
+                    </button>
+                    <a class="navbar-brand" style="color:#107896" href="#"><i class="fa fa-rocket fa-4"></i> NASA Fitness</a>
+                </div><!-- navbar-header-->
+ 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2" style="color:#107896"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
+                            </ul>
+                   <ul class="nav navbar-nav navbar-right">
+      
+        <li><a href="Default.aspx" style="color:#107896" runat="server" OnClick="logoutButton_Click"><span class="glyphicon glyphicon-log-in" style="color:#107896"></span> LogOut</a></li>
+      </ul>
+                </div><!-- bs-example-navbar-collapse-1 -->
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+				<li>
+                    <a href="Dashboard.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-tachometer fa-stack-1x"></i></span>Dashboard</a>
+                     
+                </li>
+                <li>
+                    <a href="Problem_list.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-stethoscope fa-stack-1x"></i></span>Health Questionnaire</a>
+                </li>
+                <li>
+                    <a href="FitnessProblemList.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-heartbeat fa-stack-1x"></i></span>Fitness Questionnaire</a>
+                    
+                </li>
+                <li>
+                    <a href="AddVideos.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-video-camera fa-stack-1x"></i></span>Add Exercise Videos</a>
+                </li>
+                <li>
+                    <a href="Presentations.aspx"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-file-pdf-o fa-stack-1x"></i></span>Add Lectures</a>
+                    
+                </li>
+                <li>
+                    <a href="medical_menu.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-upload fa-stack-1x"></i></span>Upload Records</a>
+                </li>
+				<li>
+                    <a href="AddCompany.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-desktop fa-stack-1x"></i></span>Add Company</a>
+                </li>
+                <li>
+                    <a href="Signup.aspx" id="signup_a" runat="server"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user-plus fa-stack-1x"></i></span>Add New Admin User</a>
+                </li>
+                <li>
+                    <a href="https://dashboard.tawk.to/login"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comments fa-stack-1x"></i></span>Online Chat</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Health.aspx">Problem_list.aspx</a>
+				</li>
+				<li style="display: none;" class="other" >
+                <a href="HealthFitnessTesting.aspx">Problem_list.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="HealthLogging.aspx">Problem_list.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="medical_record_request.aspx">Problem_list.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="Fitness.aspx">FitnessProblemList.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="FitnessLogging.aspx">FitnessProblemList.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Add_Classes.aspx">Presentations.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="FitnessTesting_Fitness.aspx">FitnessProblemList.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="Fitness_Records.aspx">FitnessProblemList.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="Month.aspx">Presentations.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="Questionnaire.aspx">Presentations.aspx</a>
+                </li>
+				<li style="display: none;" class="other" >
+                <a href="View_Presentation.aspx">Presentations.aspx</a>
+                </li>
+              
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid xyz">
+               
+                         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            
+                        </asp:ContentPlaceHolder>
+                    
+            </div>
+        </div>
+        <!-- src="js/sidebar_menu.js" -->
+    </div>
+    
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="js/sidebar_menu.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = window.location.pathname;
+            var substr = url.split('/');
+            var urlaspx = substr[substr.length-1];
+            $('#menu').find('.active').removeClass('active');
+            $('#menu li a').each(function () {
+                if (this.href.indexOf(urlaspx) >= 0) {
+                    $(this).parent().addClass('active');
+                } else {
+                $('.other a').each(function() {
+                if (this.href.indexOf(urlaspx) >= 0) {
+                var of = $(this).html();
+			$('#menu li a').each(function () {
+            if (this.href.indexOf(of) >= 0) {
+                    $(this).parent().addClass('active');
+                }
+			});
+			}
+			});
+			}
+            });
+			
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿.dummy {
+    margin-top: 100%;
+}
+
+.thumbnail {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50%-40px);
+    border-width:medium;
+}
+  
+
+    
+      body
+{ font: normal 1em 'trebuchet ms', arial, sans-serif;
+  background: #F0EFE2 url(images/background.png) repeat;
+  color: #777;}
+   
+      hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+@media only screen and (orientation:portrait) {
+    body{
+        font-size:large;
+    }
+     #frame1 {
+                margin-top: 5px;
+                width: 610px;
+                height: 367px;
+            }
+}
+@media only screen and (orientation:landscape) {
+     #frame1{
+             margin-top:5px;
+             width:610px; 
+             height:367px;
+         }
+}
+ 
+       

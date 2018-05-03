@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{77CF2864-1372-472C-8B96-75F653BDCA1C}|">
+  <MonoDevelop.Ide.ItemProperties.NasaFitness__Employee PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NasaFitness_Employee/Loggings.aspx.cs">
+    <Files>
+      <File FileName="NasaFitness_Employee/Upload_Documents.aspx" Line="66" Column="10" />
+      <File FileName="NasaFitness_Employee/MasterPage.master" Line="122" Column="22" />
+      <File FileName="NasaFitness_Employee/Loggings.aspx" Line="289" Column="10" />
+      <File FileName="NasaFitness_Employee/Loggings.aspx.cs" Line="60" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Vaishnavi/capstone17/NasaFitness_Employee/NasaFitness_Employee/Loggings.aspx.cs" relfile="NasaFitness_Employee/Loggings.aspx.cs" line="23" column="1" />
+      <Breakpoint file="/Users/Vaishnavi/capstone17/NasaFitness_Employee/NasaFitness_Employee/Loggings.aspx.cs" relfile="NasaFitness_Employee/Loggings.aspx.cs" line="60" column="1" />
+      <Breakpoint file="/Users/Vaishnavi/capstone17/NasaFitness_Employee/NasaFitness_Employee/Loggings.aspx.cs" relfile="NasaFitness_Employee/Loggings.aspx.cs" line="57" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

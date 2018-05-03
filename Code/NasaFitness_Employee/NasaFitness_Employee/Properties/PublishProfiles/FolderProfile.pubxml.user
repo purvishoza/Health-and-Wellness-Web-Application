@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Users\thakkarv\Desktop\Webapp_nasafitness_employee</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Accounts.aspx">
+      <publishTime>11/07/2017 09:44:38</publishTime>
+    </File>
+    <File Include="AfterQuestionnaire.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="bin/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/16/2017 14:14:32</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="bin/DocuSign.eSign.dll">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/16/2017 14:14:32</publishTime>
+    </File>
+    <File Include="bin/NasaFitness_Employee.dll">
+      <publishTime>11/10/2017 10:34:43</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="classes.aspx">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="css/back1.jpg">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="css/backgro.jpg">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="css/simple-sidebar.css">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="DashboardEmp.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="Documents.ashx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Exam_End.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Exam_Presentation.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Exam_ResultPage.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="Exam_Start.aspx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileCS.ashx">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="files/11.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/12.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/13.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/21.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/22.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/41.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/42.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="files/81.ppt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="FileVideos/ASBE Functional Stablization Flexion Extension %281%29.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/ASBE Functional Stablization Flexion Extension.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/Hand %281%29.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/index %281%29.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/index.mp4">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FileVideos/kk.mp4">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FileVideos/NasaFitness_Employee.dll.config">
+      <publishTime>11/07/2017 09:44:38</publishTime>
+    </File>
+    <File Include="FileVideos/OFFICIAL- %27Naina%27 FULL VIDEO Song - Sonam Kapoor, Fawad Khan, Sona Mohapatra - Amaal Mallik.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/Pullyshoulder.wmv">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/VID-20160102-WA0022 %284%29.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FileVideos/VID-20160102-WA0022.mp4">
+      <publishTime>10/30/2017 23:50:55</publishTime>
+    </File>
+    <File Include="FitnessCoaching.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FollowUp.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FollowUpDetails.ashx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FollowUpLectures.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="FollowUpPdf.ashx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="HealthCoaching.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="HIPPA.aspx">
+      <publishTime>11/09/2017 12:04:56</publishTime>
+    </File>
+    <File Include="HIPPA2.aspx">
+      <publishTime>11/07/2017 09:44:38</publishTime>
+    </File>
+    <File Include="images/back1.jpg">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="images/bck1.jpg">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="initialPage-template.aspx">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="Ionic.Zip.Reduced.dll">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="js/sidebar_menu.js">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="js/viewreportsJavaScript.js">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="license.txt">
+      <publishTime>10/30/2017 23:50:58</publishTime>
+    </File>
+    <File Include="Loggings.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="MasterPage.master">
+      <publishTime>10/31/2017 12:30:52</publishTime>
+    </File>
+    <File Include="Month.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/10/2017 10:30:31</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/bootstrap.4.0.0-alpha6.nupkg">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-grid.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-grid.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-grid.min.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-grid.min.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-reboot.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-reboot.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-reboot.min.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap-reboot.min.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap.min.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Content/bootstrap.min.css.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Scripts/bootstrap.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bootstrap.4.0.0-alpha6/content/Scripts/bootstrap.min.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/bs.Modal.0.1.3.nupkg">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/content/Content/bs.modal.css">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/content/Scripts/bs.Modal.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/content/Scripts/bs.Modal.min.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/content/Scripts/bs.Modal.min.js.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/bs.Modal.0.1.3/content/templates/modaltmpl.htm">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.min.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.min.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.slim.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/jQuery.3.1.1.nupkg">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Tools/common.ps1">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Tools/install.ps1">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/jQuery.3.1.1/Tools/uninstall.ps1">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/build/Microsoft.Net.Compilers.props">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/Microsoft.Net.Compilers.2.3.0-beta2.nupkg">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/ThirdPartyNotices.rtf">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csc.exe">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csc.exe.config">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csc.rsp">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csi.exe">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csi.exe.config">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/csi.rsp">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.CSharp.Core.targets">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/Microsoft.Win32.Primitives.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.AppContext.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Collections.Immutable.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Console.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Diagnostics.Process.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Diagnostics.StackTrace.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.IO.Compression.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.IO.FileSystem.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.IO.FileSystem.Primitives.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.IO.Pipes.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Reflection.Metadata.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.AccessControl.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Claims.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Cryptography.Encoding.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Cryptography.Primitives.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Security.Principal.Windows.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Text.Encoding.CodePages.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Threading.Thread.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.ValueTuple.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Xml.ReaderWriter.dll">
+      <publishTime>10/30/2017 23:51:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Xml.XmlDocument.dll">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Xml.XPath.dll">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/System.Xml.XPath.XDocument.dll">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/vbc.exe">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/vbc.exe.config">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/vbc.rsp">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/VBCSCompiler.exe">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.2.3.0-beta2/tools/VBCSCompiler.exe.config">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/NReco.VideoConverter.1.1.2/lib/net20/NReco.VideoConverter.dll">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/NReco.VideoConverter.1.1.2/lib/net20/NReco.VideoConverter.XML">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/NReco.VideoConverter.1.1.2/NReco.VideoConverter.1.1.2.nupkg">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/NReco.VideoConverter.1.1.2/readme.txt">
+      <publishTime>10/30/2017 23:51:07</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net20/Spire.License.dll">
+      <publishTime>10/30/2017 23:51:08</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net20/Spire.License.xml">
+      <publishTime>10/30/2017 23:51:08</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net20/Spire.Pdf.dll">
+      <publishTime>10/30/2017 23:51:08</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net20/Spire.Presentation.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net20/Spire.Presentation.xml">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net35/Spire.License.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net35/Spire.License.xml">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net35/Spire.Pdf.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net35/Spire.Presentation.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net35/Spire.Presentation.xml">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40-client/Spire.License.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40-client/Spire.License.xml">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40-client/Spire.Pdf.dll">
+      <publishTime>10/30/2017 23:51:09</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40-client/Spire.Presentation.dll">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40-client/Spire.Presentation.xml">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40/Spire.License.dll">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40/Spire.License.xml">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40/Spire.Pdf.dll">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40/Spire.Presentation.dll">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/lib/net40/Spire.Presentation.xml">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/Spire.Presentation.2.8.10/Spire.Presentation.2.8.10.nupkg">
+      <publishTime>10/30/2017 23:51:08</publishTime>
+    </File>
+    <File Include="packages/underscore.js.1.8.3/Content/Scripts/underscore.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/underscore.js.1.8.3/Content/Scripts/underscore.min.js">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/underscore.js.1.8.3/Content/Scripts/underscore.min.map">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="packages/underscore.js.1.8.3/underscore.js.1.8.3.nupkg">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="PARQ.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="pdffiles/11.pdf">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="pdffiles/12.pdf">
+      <publishTime>10/30/2017 23:51:10</publishTime>
+    </File>
+    <File Include="pdffiles/13.pdf">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="pdffiles/21.pdf">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="pdffiles/41.pdf">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="pdffiles/42.pdf">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="pdffiles/71.pdf">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="PersonalInfo1.aspx">
+      <publishTime>11/07/2017 09:44:38</publishTime>
+    </File>
+    <File Include="PersonalInformation2.aspx">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="PersonalInformation3.aspx">
+      <publishTime>11/09/2017 12:01:06</publishTime>
+    </File>
+    <File Include="Prescription.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="PresentationFileCS.ashx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Presentations.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Questionnaire.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="README.txt">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Reports.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Reports_Fitness.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Reports_P.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.intellisense.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.easing.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.easy-ticker.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/justgage.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Scripts/raphael-2.1.4.min.js">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="style.css">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="templates/modaltmpl.htm">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="Upload_Documents.aspx">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Videos/ASBE Functional Stablization Flexion Extension %281%29.mp4">
+      <publishTime>10/30/2017 23:50:56</publishTime>
+    </File>
+    <File Include="Videos/ASBE Functional Stablization Flexion Extension.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/Hand %281%29.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/index %281%29.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/index.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/kk.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/OFFICIAL- %27Naina%27 FULL VIDEO Song - Sonam Kapoor, Fawad Khan, Sona Mohapatra - Amaal Mallik.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/Pullyshoulder.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/VID-20160102-WA0022 %284%29.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Videos/VID-20160102-WA0022.mp4">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="viewResults.aspx">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="viewVideo.aspx">
+      <publishTime>10/30/2017 23:51:11</publishTime>
+    </File>
+    <File Include="View_Presentation.aspx">
+      <publishTime>10/30/2017 23:50:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/10/2017 10:34:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

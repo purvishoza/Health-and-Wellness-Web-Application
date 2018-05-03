@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8C68D5B-240A-4CD0-BE2B-70EB9224B946}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NasaFitness_Admin</RootNamespace>
+    <AssemblyName>NasaFitness_Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=6.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="CDO, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\CDO.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NReco.VideoConverter, Version=1.1.2.0, Culture=neutral, PublicKeyToken=395ccb334978a0cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NReco.VideoConverter.1.1.2\lib\net20\NReco.VideoConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire.Presentation.2.8\lib\net40-client\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\packages\Spire.Presentation.2.8\lib\net40-client\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Presentation">
+      <HintPath>..\packages\Spire.Presentation.2.8\lib\net40-client\Spire.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddCompany.aspx" />
+    <Content Include="bin\ADODB.dll" />
+    <Content Include="bin\CDO.dll" />
+    <Content Include="bin\ffmpeg.exe" />
+    <Content Include="bin\FredCK.FCKeditorV2.dll" />
+    <Content Include="bin\Ionic.Zip.Reduced.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\itextsharp.dll.refresh.mp3" />
+    <Content Include="bin\itextsharp.xml" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Office.Interop.PowerPoint.dll" />
+    <Content Include="bin\NASAFitness.Features.dll" />
+    <Content Include="bin\NASAFitness.Features.pdb" />
+    <Content Include="bin\NASAFitness.UI.dll" />
+    <Content Include="bin\NASAFitness.UI.pdb" />
+    <Content Include="bin\NASAFitness.UI.xml" />
+    <Content Include="bin\NReco.VideoConverter.dll" />
+    <Content Include="bin\NReco.VideoConverter.dll.refresh.mp3" />
+    <Content Include="bin\NReco.VideoConverter.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\Scripting.dll" />
+    <Content Include="bin\Spire.License.dll" />
+    <Content Include="bin\Spire.License.dll.refresh.mp3" />
+    <Content Include="bin\Spire.License.xml" />
+    <Content Include="bin\Spire.Pdf.dll" />
+    <Content Include="bin\Spire.Pdf.dll.refresh.mp3" />
+    <Content Include="bin\Spire.Presentation.dll" />
+    <Content Include="bin\Spire.Presentation.dll.refresh.mp3" />
+    <Content Include="bin\Spire.Presentation.xml" />
+    <Content Include="bin\VBScript_RegExp_55.dll" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bs.modal.css" />
+    <Content Include="Content\morris.css" />
+    <Content Include="Content\sb-admin.css" />
+    <Content Include="css\js\sidebar_menu.js" />
+    <Content Include="css\simple-sidebar.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="FileVideos\Hand %281%29.mp4" />
+    <Content Include="FileVideos\kk.mp4" />
+    <Content Include="FileVideos\Pullyshoulder.wmv" />
+    <Content Include="FitnessProblemList.aspx" />
+    <Content Include="Fitness_Records.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Help.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\images\back1.jpg" />
+    <Content Include="js\images\bck1.jpg" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\morris-data.js" />
+    <Content Include="js\morris.js" />
+    <Content Include="js\morris.min.js" />
+    <Content Include="js\raphael.min.js" />
+    <Content Include="js\sidebar_menu.js" />
+    <Content Include="js\viewreportsJavaScript.js" />
+    <Content Include="obj\Debug\NasaFitness_Admin.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\Health_Coaching_Admin.csproj.FileListAbsolute.txt" />
+    <Content Include="packages.config" />
+    <Content Include="FileCS.ashx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="files\11.ppt" />
+    <Content Include="files\13.ppt" />
+    <Content Include="files\22.ppt" />
+    <Content Include="files\41.ppt" />
+    <Content Include="files\42.ppt" />
+    <Content Include="files\81.ppt" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\NasaFitness_Admin.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\x86\Debug\CoreCompileInputs.cache" />
+    <Content Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\x86\Debug\Health_Coaching_Admin.csprojResolveAssemblyReference.cache" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\bootstrap.4.0.0-alpha6.nupkg" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-grid.css.map" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-grid.min.css.map" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-reboot.css.map" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-reboot.min.css.map" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap.min.css.map" />
+    <Content Include="packages\bs.Modal.0.1.3\bs.Modal.0.1.3.nupkg" />
+    <Content Include="packages\bs.Modal.0.1.3\content\Scripts\bs.Modal.min.js.map" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.min.map" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="packages\jQuery.3.1.1\jQuery.3.1.1.nupkg" />
+    <Content Include="packages\jQuery.3.1.1\Tools\common.ps1" />
+    <Content Include="packages\jQuery.3.1.1\Tools\install.ps1" />
+    <Content Include="packages\jQuery.3.1.1\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\build\Microsoft.Net.Compilers.props" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\Microsoft.Net.Compilers.2.3.0-beta2.nupkg" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\ThirdPartyNotices.rtf" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csc.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csc.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csi.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csi.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\vbc.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\vbc.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\VBCSCompiler.exe.config" />
+    <Content Include="packages\NReco.VideoConverter.1.1.2\NReco.VideoConverter.1.1.2.nupkg" />
+    <Content Include="packages\Spire.Presentation.2.8.10\Spire.Presentation.2.8.10.nupkg" />
+    <Content Include="packages\underscore.js.1.8.3\Content\Scripts\underscore.min.map" />
+    <Content Include="packages\underscore.js.1.8.3\underscore.js.1.8.3.nupkg" />
+    <Content Include="pdffiles\11.pdf" />
+    <Content Include="pdffiles\13.pdf" />
+    <Content Include="pdffiles\41.pdf" />
+    <Content Include="pdffiles\42.pdf" />
+    <Content Include="Scripts\bs.Modal.min.js.map" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\underscore.min.map" />
+    <Content Include="PresentationFileCS.ashx" />
+    <None Include="Properties\PublishProfiles\NasaFitness_Admin.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddVideos.aspx" />
+    <Content Include="Add_Classes.aspx" />
+    <Content Include="back1.jpg" />
+    <Content Include="background.png" />
+    <Content Include="bck1.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="Exam_End.aspx" />
+    <Content Include="Exam_Presentation.aspx" />
+    <Content Include="Exam_ResultPage.aspx" />
+    <Content Include="Exam_Start.aspx" />
+    <Content Include="Fitness.aspx" />
+    <Content Include="FitnessLogging.aspx" />
+    <Content Include="FitnessMealPlan.aspx" />
+    <Content Include="FitnessObjectiveFindingsExam.aspx" />
+    <Content Include="FitnessPARQ.aspx" />
+    <Content Include="FitnessTesting.aspx" />
+    <Content Include="FitnessTesting_Fitness.aspx" />
+    <Content Include="Health.aspx" />
+    <Content Include="HealthFitnessTesting.aspx" />
+    <Content Include="HealthLogging.aspx" />
+    <Content Include="MealPlan.aspx" />
+    <Content Include="medical_menu.aspx" />
+    <Content Include="medical_record_request.aspx" />
+    <Content Include="Month.aspx" />
+    <Content Include="ObjectiveFindingsExam.aspx" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-grid.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-grid.min.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-reboot.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap-reboot.min.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.4.0.0-alpha6\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bs.Modal.0.1.3\content\Content\bs.modal.css" />
+    <Content Include="packages\bs.Modal.0.1.3\content\Scripts\bs.Modal.js" />
+    <Content Include="packages\bs.Modal.0.1.3\content\Scripts\bs.Modal.min.js" />
+    <Content Include="packages\bs.Modal.0.1.3\content\templates\modaltmpl.htm" />
+    <None Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.js" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.min.js" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="packages\jQuery.3.1.1\Content\Scripts\jquery-3.1.1.slim.min.js" />
+    <None Include="packages\jQuery.3.1.1\Tools\jquery-3.1.1.intellisense.js" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\csi.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Console.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Diagnostics.Process.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.IO.FileSystem.DriveInfo.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.IO.Pipes.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.AccessControl.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Claims.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Security.Principal.Windows.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Threading.Thread.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\vbc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.3.0-beta2\tools\VBCSCompiler.exe" />
+    <Content Include="packages\NReco.VideoConverter.1.1.2\lib\net20\NReco.VideoConverter.dll" />
+    <Content Include="packages\NReco.VideoConverter.1.1.2\lib\net20\NReco.VideoConverter.XML" />
+    <Content Include="packages\NReco.VideoConverter.1.1.2\readme.txt" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net20\Spire.License.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net20\Spire.License.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net20\Spire.Pdf.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net20\Spire.Presentation.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net20\Spire.Presentation.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net35\Spire.License.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net35\Spire.License.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net35\Spire.Pdf.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net35\Spire.Presentation.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net35\Spire.Presentation.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40-client\Spire.License.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40-client\Spire.License.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40-client\Spire.Pdf.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40-client\Spire.Presentation.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40-client\Spire.Presentation.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40\Spire.License.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40\Spire.License.xml" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40\Spire.Pdf.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40\Spire.Presentation.dll" />
+    <Content Include="packages\Spire.Presentation.2.8.10\lib\net40\Spire.Presentation.xml" />
+    <Content Include="packages\underscore.js.1.8.3\Content\Scripts\underscore.js" />
+    <Content Include="packages\underscore.js.1.8.3\Content\Scripts\underscore.min.js" />
+    <Content Include="PARQ.aspx" />
+    <Content Include="Presentations.aspx" />
+    <Content Include="Problem_list.aspx" />
+    <Content Include="Questionnaire.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bs.Modal.js" />
+    <Content Include="Scripts\bs.Modal.min.js" />
+    <Content Include="Scripts\gridviewScroll.min.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
+    <Content Include="Signup.aspx" />
+    <Content Include="style.css" />
+    <Content Include="templates\modaltmpl.htm" />
+    <Content Include="Videos\Hand %281%29.mp4" />
+    <Content Include="Videos\kk.mp4" />
+    <Content Include="Videos\Pullyshoulder.mp4" />
+    <Content Include="View_Presentation.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVideos.aspx.cs">
+      <DependentUpon>AddVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVideos.aspx.designer.cs">
+      <DependentUpon>AddVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Classes.aspx.cs">
+      <DependentUpon>Add_Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Classes.aspx.designer.cs">
+      <DependentUpon>Add_Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_End.aspx.cs">
+      <DependentUpon>Exam_End.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_End.aspx.designer.cs">
+      <DependentUpon>Exam_End.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Presentation.aspx.cs">
+      <DependentUpon>Exam_Presentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_Presentation.aspx.designer.cs">
+      <DependentUpon>Exam_Presentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_ResultPage.aspx.cs">
+      <DependentUpon>Exam_ResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_ResultPage.aspx.designer.cs">
+      <DependentUpon>Exam_ResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Start.aspx.cs">
+      <DependentUpon>Exam_Start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_Start.aspx.designer.cs">
+      <DependentUpon>Exam_Start.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness.aspx.cs">
+      <DependentUpon>Fitness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fitness.aspx.designer.cs">
+      <DependentUpon>Fitness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessLogging.aspx.cs">
+      <DependentUpon>FitnessLogging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessLogging.aspx.designer.cs">
+      <DependentUpon>FitnessLogging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessMealPlan.aspx.cs">
+      <DependentUpon>FitnessMealPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessMealPlan.aspx.designer.cs">
+      <DependentUpon>FitnessMealPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessObjectiveFindingsExam.aspx.cs">
+      <DependentUpon>FitnessObjectiveFindingsExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessObjectiveFindingsExam.aspx.designer.cs">
+      <DependentUpon>FitnessObjectiveFindingsExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessPARQ.aspx.cs">
+      <DependentUpon>FitnessPARQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessPARQ.aspx.designer.cs">
+      <DependentUpon>FitnessPARQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessProblemList.aspx.cs">
+      <DependentUpon>FitnessProblemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessProblemList.aspx.designer.cs">
+      <DependentUpon>FitnessProblemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessTesting.aspx.cs">
+      <DependentUpon>FitnessTesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessTesting.aspx.designer.cs">
+      <DependentUpon>FitnessTesting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessTesting_Fitness.aspx.cs">
+      <DependentUpon>FitnessTesting_Fitness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FitnessTesting_Fitness.aspx.designer.cs">
+      <DependentUpon>FitnessTesting_Fitness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness_Records.aspx.cs">
+      <DependentUpon>Fitness_Records.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fitness_Records.aspx.designer.cs">
+      <DependentUpon>Fitness_Records.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Health.aspx.cs">
+      <DependentUpon>Health.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Health.aspx.designer.cs">
+      <DependentUpon>Health.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthFitnessTesting.aspx.cs">
+      <DependentUpon>HealthFitnessTesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthFitnessTesting.aspx.designer.cs">
+      <DependentUpon>HealthFitnessTesting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthLogging.aspx.cs">
+      <DependentUpon>HealthLogging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthLogging.aspx.designer.cs">
+      <DependentUpon>HealthLogging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MealPlan.aspx.cs">
+      <DependentUpon>MealPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MealPlan.aspx.designer.cs">
+      <DependentUpon>MealPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="medical_menu.aspx.cs">
+      <DependentUpon>medical_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="medical_menu.aspx.designer.cs">
+      <DependentUpon>medical_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="medical_record_request.aspx.cs">
+      <DependentUpon>medical_record_request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="medical_record_request.aspx.designer.cs">
+      <DependentUpon>medical_record_request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Month.aspx.cs">
+      <DependentUpon>Month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Month.aspx.designer.cs">
+      <DependentUpon>Month.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectiveFindingsExam.aspx.cs">
+      <DependentUpon>ObjectiveFindingsExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ObjectiveFindingsExam.aspx.designer.cs">
+      <DependentUpon>ObjectiveFindingsExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PARQ.aspx.cs">
+      <DependentUpon>PARQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PARQ.aspx.designer.cs">
+      <DependentUpon>PARQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationFileCS.ashx.cs">
+      <DependentUpon>PresentationFileCS.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentations.aspx.cs">
+      <DependentUpon>Presentations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentations.aspx.designer.cs">
+      <DependentUpon>Presentations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Problem_list.aspx.cs">
+      <DependentUpon>Problem_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Problem_list.aspx.designer.cs">
+      <DependentUpon>Problem_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questionnaire.aspx.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Questionnaire.aspx.designer.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Presentation.aspx.cs">
+      <DependentUpon>View_Presentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Presentation.aspx.designer.cs">
+      <DependentUpon>View_Presentation.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

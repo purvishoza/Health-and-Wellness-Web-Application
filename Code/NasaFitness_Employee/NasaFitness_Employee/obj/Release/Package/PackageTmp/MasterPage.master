@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Nasa Fitness</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+          <!--  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    
+     <script src="Scripts/bs.modal.min.js"></script>
+
+      <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+    
+    <!--<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="../Scripts/gridviewScroll.min.js"></script> 
+<style>
+textarea{
+resize:none;
+}
+</style>   
+</head>
+        
+<body >
+   
+    <nav class="navbar navbar-default no-margin">
+    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header fixed-brand">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle" >
+                      <span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
+                    </button>
+                    <a class="navbar-brand" style="color:#107896" href="#"><i class="fa fa-rocket fa-4"></i> NASA Fitness</a>
+                </div><!-- navbar-header-->
+ 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2" style="color:#107896"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
+                            </ul><br/>&nbsp;
+				<asp:Label id="empName" runat="server" Style="font-weight: bold;font-size: x-large;"></asp:Label>
+                   <ul class="nav navbar-nav navbar-right">
+      
+        <li><a href="Default.aspx" style="color:#107896" runat="server" OnClick="logoutButton_Click"><span class="glyphicon glyphicon-log-in" style="color:#107896"></span> LogOut</a></li>
+      </ul>
+                </div><!-- bs-example-navbar-collapse-1 -->
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu" >
+                <li>
+                    <a href="DashboardEmp.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-tachometer fa-stack-1x"></i></span>Dashboard</a>
+                       
+                </li>
+                <li>
+                    <a href="HealthCoaching.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-stethoscope fa-stack-1x"></i></span>Questionnaires</a>
+                       
+                </li>
+                <li>
+                    <a href="Reports.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-list fa-stack-1x"></i></span>Questionnaire Reports</a>
+                    
+                </li>
+                <li>
+                    <a href="Loggings.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-thermometer-full fa-stack-1x"></i></span>Fitness Exams</a>
+                </li>
+				<li>
+                    <a href="Presentations.aspx"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-file-powerpoint-o fa-stack-1x"></i></span>Health Coaching Presentations</a>
+                    
+                </li>
+                <li>
+                    <a href="FollowUpLectures.aspx"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-file-pdf-o fa-stack-1x"></i></span>Health Coaching Lectures</a>
+                    
+                </li>
+                <li>
+                    <a href="viewVideo.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-video-camera fa-stack-1x"></i></span>Health Coaching Videos</a>
+                </li>
+                <li>
+                    <a href="FollowUp.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comments fa-stack-1x"></i></span>Health Coaching</a>
+                </li>
+                <li>
+                    <a href="Upload_Documents.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-upload fa-stack-1x"></i></span>Upload Documents</a>
+                </li>
+                <li>
+                    <a href="Accounts.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comments fa-stack-1x"></i></span>My Account</a>
+                </li>
+				<li>
+                    <a href="Default.aspx" runat="server" OnClick="logoutButton_Click"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sign-out fa-stack-1x"></i></span>Log Out</a>
+                </li>
+
+              <li style="display: none;" class="other" >
+                <a href="PARQ.aspx">HealthCoaching.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="FitnessCoaching.aspx">HealthCoaching.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Reports_Fitness.aspx">Reports.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Reports_P.aspx">Reports.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Prescription.aspx">FollowUp.aspx</a>
+                </li>
+                 <li style="display: none;" class="other" >
+                <a href="Month.aspx">Presentations.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="Questionnaire.aspx">Presentations.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="View_Presentation.aspx">Presentations.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="AfterQuestionnaire.aspx">Presentations.aspx</a>
+                </li>
+                <li style="display: none;" class="other" >
+                <a href="viewResults.aspx">Presentations.aspx</a>
+                </li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid xyz">
+               
+                         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            
+                        </asp:ContentPlaceHolder>
+                    
+            </div>
+        </div>
+        <!-- src="js/sidebar_menu.js" -->
+    </div>
+    
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="js/sidebar_menu.js"></script>
+    <script type="text/javascript">
+        
+            $(document).ready(function () {
+            var url = window.location.pathname;
+            var substr = url.split('/');
+            var urlaspx = substr[substr.length-1];
+            $('#menu').find('.active').removeClass('active');
+            $('#menu li a').each(function () {
+                if (this.href.indexOf(urlaspx) >= 0) {
+                $(this).parent().addClass('active');
+            } else {
+                $('.other a').each(function () {
+                    if (this.href.indexOf(urlaspx) >= 0) {
+                        var of = $(this).html();
+                        $('#menu li a').each(function () {
+                            if (this.href.indexOf(of) >= 0) {
+                                $(this).parent().addClass('active');
+                            }
+                        });
+                    }
+                });
+			}
+            });
+			
+        });
+    
+			
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58e33e2ff7bbaa72709c4096/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</body>
+</html>
+
+
+
